@@ -1,10 +1,14 @@
 import "../css/Navbar.css"
 import CartWidget from "./CartWidget"
+// import logo from '../assets/react.svg'
 
 const Navbar = () => {
     return(
         <nav className="nav-container">
-            <h2>Coder Shop</h2>
+            {/* imagen en carpeta public */}
+           <img src="../logo-shop.png" alt='logo' style={{width:'8rem'}}/>
+           {/* imagen dentro de src */}
+           {/* <img src={logo} alt='logo'/> */}
             <div className="a-container">
                 <a style={{fontWeight:"bold", textDecoration:'none', color:'black'}} href="">Nuevos</a>
                 <a style={{fontWeight:"bold", textDecoration:'none', color:'black'}} href="">Ofertas</a>
