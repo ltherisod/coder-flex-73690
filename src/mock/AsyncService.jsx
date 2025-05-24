@@ -49,6 +49,8 @@ export const getProducts = () =>{
         },3000)
     })
 }
+
+//LOS ID COMO STRING
 export const getOneProduct = (id) =>{
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
@@ -61,3 +63,19 @@ export const getOneProduct = (id) =>{
         },3000)
     })
 }
+
+//SI TENGO LOS IDS COMO NUMBER, PARSEO EL ID QUE VIENE POR PARAMETRO
+// export const getOneProduct = (id)=>{
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             if(!error){
+//                 let oneProduct= products.find((item)=> item.id === Number(id))
+//                 let oneProduct= products.find((item)=> item.id === parseInt(id))
+//                 resolve(oneProduct)
+//             }else{
+//                 reject('Hubo un error, intente más tarde')
+//             }
+//         },3000)
+//     })
+// }
+

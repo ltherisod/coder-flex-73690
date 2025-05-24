@@ -1,36 +1,10 @@
 import {useState, useEffect} from 'react'
 //imports arriba del componente
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, onAdd}) => {
     //logica, funciones, hook
     //declaracion del hook
     const [count, setCount]= useState(1)
-    const [compra, setCompra]=useState(false)
-    //explicaciones del useEffect
-
-    //se va a ejecutar siempre.
-    //no es recomendables
-    useEffect(()=>{
-        console.log('ME EJECUTO SIEMPRE')
-    })
-
-    //se ejecuta una sola vez, cuando se monta el componente
-    useEffect(()=>{
-        console.log('ME EJECUTO UNA SOLA VEZ')
-    },[])
-
-    //se ejecuta cuando monta componente y cada vez que cambia lo que esta escuchando
-    useEffect(()=>{
-        console.log('ME EJECUTO CUANDO MONTA EL COMPONENTE Y SIEMPRE QUE COMPRA CAMBIE',compra)
-    },[compra])
-
-    
-
-    const comprar = () =>{
-        setCompra(!compra)
-    }
-
-
-
+   
     const restar = () => {
         if(count > 0){
             setCount(count - 1)
@@ -42,8 +16,10 @@ const ItemCount = ({stock}) => {
             setCount (count + 1)
         }
     }
-    console.log('Soy ItemCount')
 
+// const comprar = () => {
+//     onAdd(count)
+// }
 
   return (
    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
@@ -52,7 +28,8 @@ const ItemCount = ({stock}) => {
         <span  className='btn'>{count}</span>
         <button className='btn btn-success' onClick={sumar}>+</button>
     </div>
-    <button className='btn btn-primary' onClick={comprar}>Agregar al carrito</button>
+    {/* <button className='btn btn-primary' onClick={comprar} >Agregar al carrito</button> */}
+     <button className='btn btn-primary' onClick={()=>onAdd(count)} >Agregar al carrito</button>
    </div>
   )
 }
