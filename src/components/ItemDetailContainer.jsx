@@ -18,7 +18,6 @@ const ItemDetailContainer = () => {
         .catch((error)=> console.log(error))
     },[])
 
-    console.log(detalle)
   return (
     <div>
         <ItemDetail detalle={detalle} />
