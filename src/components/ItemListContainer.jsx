@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { getProducts } from "../mock/AsyncService"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
-import Input from "./ejemplos/Input"
+
 
 const ItemListContainer = ({greeting})=>{
     const [data, setData]= useState([])
@@ -25,7 +25,7 @@ const ItemListContainer = ({greeting})=>{
  
     return(
         <div>
-            {/* <Input/> */}
+           
             <h1>{greeting}{categoryId && <span style={{textTransform:'capitalize'}}>{categoryId}</span>}</h1>
            <ItemList data={data}/>
         </div>
