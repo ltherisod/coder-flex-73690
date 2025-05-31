@@ -1,7 +1,14 @@
-import React from 'react'
+//importar el hook useContext 
+import {useContext}from 'react'
 import ItemCount from './ItemCount'
+//importar el contexto que se quiere usar
+import { CartContext } from '../context/CartContext'
 
 const ItemDetail = ({detalle}) => {
+// const contexto = useContext(CartContext)
+// console.log(contexto)
+const {cart} = useContext(CartContext)
+console.log(cart)
   const onAdd = (cantidad) => {
     console.log(`Compraste ${cantidad} del item ${detalle.name}`)
   }
