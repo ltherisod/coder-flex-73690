@@ -52,11 +52,7 @@ const ItemListContainer = ({greeting})=>{
  
     //SOLO SE HACE UNA SOLA VEZ, despues lo borran
 
-    // const subirData = () =>{
-    //     console.log('Subiendo prods...')
-    //     const prodCollectionToAdd = collection(db, "productos")
-    //     products.map((item)=> addDoc(prodCollectionToAdd, item))
-    // }
+   
 
 
 
@@ -66,7 +62,7 @@ const ItemListContainer = ({greeting})=>{
             loading 
             ? <LoaderComponent/> 
             :   <div>
-                {/* <button onClick={subirData}>Subir DATA</button> */}
+                
                     <h1>{greeting}{categoryId && <span style={{textTransform:'capitalize'}}>{categoryId}</span>}</h1>
                     <ItemList data={data}/>
                 </div>
