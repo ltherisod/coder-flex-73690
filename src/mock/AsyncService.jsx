@@ -1,15 +1,5 @@
-const products = [
+export const products = [
     {
-        // id:'01',NO LO PONGO EN FIREBASE
-        name:'Random 1',
-        price:1500,
-        description: 'lorem ipsums lore lorem',
-        stock:10,
-        img:'https://i.postimg.cc/J4SBXx0t/il-794x-N-5920937786-cdwy.webp',
-        category:'nuevos'
-    },
-    {
-        id:'02',
         name:'Random 2',
         price:500,
         description:'lorem ipsums lore lorem',
@@ -18,7 +8,6 @@ const products = [
         category:'ofertas'
     },
     {
-        id:'03',
         name:'Random 3',
         price:8000,
         stock:8,
@@ -27,7 +16,6 @@ const products = [
          category:'mas vendidos'
     },
     {
-        id:'04',
         name:'Random 4',
         price:9000,
         stock:18,
