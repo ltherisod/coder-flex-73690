@@ -7,7 +7,6 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Error from './components/Error';
 import Cart from './components/Cart';
-//importar el proveedor
 import { CartProvider } from './context/CartContext';
 
 

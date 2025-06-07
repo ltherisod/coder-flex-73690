@@ -1,6 +1,6 @@
 const products = [
     {
-        id:'01',
+        // id:'01',NO LO PONGO EN FIREBASE
         name:'Random 1',
         price:1500,
         description: 'lorem ipsums lore lorem',
