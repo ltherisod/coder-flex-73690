@@ -1,12 +1,29 @@
-# React + Vite
+# Coder Flex App 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue realizado para enseñar las bases de react con javascript en CoderHouse.
 
-Currently, two official plugins are available:
+![app](/public/flex-app-readme.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### Instalación ⚙️
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone el repositorio
+2. Haga el comando `cd coder-flex-73690` para moverse a la carpeta del proyecto
+3. Instale dependencias con el comando `npm install`
+4. Para levantar la app en el servidor local ejecute el comando `npm run dev`
+
+### Version Host 💻
+
+Si desea ver el proyecto online, puede ingresar al siguiente link: [Coder Flex App]()
+
+
+### Librerias Utilizadas 📖
+
+- [React Bootstrap](https://react-bootstrap.netlify.app/): utilizada para el styling de la pp
+- [React Router Dom](https://react-bootstrap.netlify.app/): utilizada para la navegación por rutas
+- [Firebase](https://react-bootstrap.netlify.app/): utilizada como base de datos
+
+
+
+Desarrollado por Laura 🤭
+
