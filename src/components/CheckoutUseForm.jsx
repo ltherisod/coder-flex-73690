@@ -10,7 +10,6 @@ const CheckoutUseForm = () => {
     const {cart, cartTotal, clear}=useContext(CartContext)
     const {register, handleSubmit, formState:{errors}, getValues}= useForm()
 
-    console.log(errors, 'errors')
     const finalizarCompra = (dataDelForm)=>{
         let orden = {
             comprador:{
