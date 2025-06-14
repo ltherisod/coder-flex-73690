@@ -22,15 +22,18 @@ const ItemCount = ({stock, onAdd}) => {
 // }
 
   return (
-   <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+  <>
+  {stock === 0 ? <p>Lo sentimos no hay stock disponible de este producto 😭</p>
+  : <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
      <div>
         <button className='btn btn-danger' onClick={restar}>-</button>
         <span  className='btn'>{count}</span>
         <button className='btn btn-success' onClick={sumar}>+</button>
     </div>
     {/* <button className='btn btn-primary' onClick={comprar} >Agregar al carrito</button> */}
-     <button className='btn btn-primary' onClick={()=>onAdd(count)} >Agregar al carrito</button>
-   </div>
+     <button className='btn btn-primary' onClick={()=>onAdd(count)} disabled={stock === 0 || count === 0} >Agregar al carrito</button>
+   </div>}
+  </>
   )
 }
 //exportamos el componente
